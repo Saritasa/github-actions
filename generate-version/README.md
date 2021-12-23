@@ -43,7 +43,6 @@ on:
   push:
     branches:
       - develop
-      - feature/*
       - release/*
     tags: [ '*' ]
 ```
@@ -51,6 +50,7 @@ on:
 - Build develop branch (-dev suffix).
 - Build release branch (-beta suffix).
 - Build every tag (it should belong to the main branch).
+- Do not build the main branch directly.
 
 You can also build feature/ and hotfix/ branches. They will use the branch name as a suffix. Example:
 
