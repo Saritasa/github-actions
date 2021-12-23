@@ -2,6 +2,10 @@
 
 Generates SemVer by Git branch or tag. Updates version in .NET project files.
 
+A unique release name is guaranteed for every branch+changeset combination.
+
+![](tree.png)
+
 ## Inputs
 
 - main-branch-name
@@ -15,6 +19,8 @@ Generates SemVer by Git branch or tag. Updates version in .NET project files.
 - assembly-semver
 
 ## Examples
+
+[Sample Workflow](https://github.com/AntonZiminSaritasa/generate-version-demo/blob/main/.github/workflows/windows-build.yml)
 
 ```
     - name: Get version from Git and update .NET projects
