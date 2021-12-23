@@ -19,7 +19,7 @@ Generates SemVer by Git branch or tag. Updates version in .NET project files.
 ```
     - name: Get version from Git and update .NET projects
       id: gitversion
-      uses: Saritasa/github-actions@0.1.0
+      uses: Saritasa/github-actions/generate-version@0.1.0
       with:
         update-dotnet-project-files: true
 ```
@@ -27,7 +27,7 @@ Generates SemVer by Git branch or tag. Updates version in .NET project files.
 ```
     - name: Get version from Git and update .NET projects
       id: gitversion
-      uses: Saritasa/github-actions@0.1.0
+      uses: Saritasa/github-actions/generate-version@0.1.0
       with:
         main-branch-name: main
         update-dotnet-project-files: true
