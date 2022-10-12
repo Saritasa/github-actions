@@ -31,7 +31,7 @@ function getVersion(mainBranchName, ref, runNumber, sha) {
         let version;
 
         if (mainVersion !== null) {
-            version = `${mainVersion[0]}.${mainVersion[1]}${+mainVersion[2] + 1}`;
+            version = `${mainVersion[0]}.${mainVersion[1]}.${+mainVersion[2] + 1}`;
         }
         else {
             version = UNKNOWN_VERSION;
