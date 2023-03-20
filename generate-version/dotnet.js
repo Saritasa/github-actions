@@ -4,8 +4,10 @@ var xml2js = require('xml2js');
 
 function updateDotnetProjectFiles(globPattern, version) {
     console.log('Updating .NET project files...');
+    console.log('Pattern: ' + globPattern);
 
     const files = glob.readdirSync(globPattern);
+    console.log(`Found {files.length} projects.`);
     files.forEach(file => updateProjectVersion(file, version));
 
     console.log('Done.')
