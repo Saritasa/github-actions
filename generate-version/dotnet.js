@@ -1,5 +1,5 @@
 var fs = require('fs');
-var glob = require('glob')();
+var glob = require('glob');
 var xml2js = require('xml2js');
 
 function updateDotnetProjectFiles(globPattern, version) {
