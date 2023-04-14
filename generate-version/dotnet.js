@@ -1,12 +1,12 @@
 var fs = require('fs');
-var glob = require('glob-fs')();
+var glob = require('glob')();
 var xml2js = require('xml2js');
 
 function updateDotnetProjectFiles(globPattern, version) {
     console.log('Updating .NET project files...');
     console.log('Pattern: ' + globPattern);
 
-    const files = glob.readdirSync(globPattern);
+    const files = glob.sync(globPattern).found;
     console.log(`Found ${files.length} projects.`);
     files.forEach(file => updateProjectVersion(file, version));
 
