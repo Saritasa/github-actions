@@ -6,7 +6,7 @@ function updateDotnetProjectFiles(globPattern, version) {
     console.log('Updating .NET project files...');
     console.log('Pattern: ' + globPattern);
 
-    const files = glob.sync(globPattern).found;
+    const files = glob.sync(globPattern);
     console.log(`Found ${files.length} projects.`);
     files.forEach(file => updateProjectVersion(file, version));
 
